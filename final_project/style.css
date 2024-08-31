@@ -23,13 +23,7 @@ img {
   color: #7e2451;
 }
 
-  h1 {
-    padding-left: 7%;
-
-}
-
-
-
+h1,
 h2,
 h3,
 h4,
@@ -124,10 +118,8 @@ nav{
   justify-content: center;
 }
 .text-content {
-  max-width: 90%;
+  max-width: 60%;
   padding-right: 20px;
-  font-size: 20px;
-
 }
 .image-content {
   flex-shrink: 0;
@@ -172,6 +164,11 @@ footer{
 .social-icon img {
   width: 24px;
   height: 24px;
+
+}
+
+.social-icon img:hover{
+  cursor: pointer;
 }
 
 
@@ -273,6 +270,8 @@ ul#menu li.selected a:hover {
   margin: 0 auto 0 auto;
   padding: 0 24px 20px 20px;
   background: #d1b8b8;
+  font-family: sans-serif;
+  white-space: pre-line;
 }
 
 .sidebar {
@@ -357,8 +356,8 @@ ul#menu li.selected a:hover {
 footer{
   background-color: #9a5c7c;
   margin-top: 20px;
-  padding-top: 20px;
-  height: 30vh;
+  padding-top: 30px;
+  height: 35vh;
 }
 
 
