@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Safety Contacts - Rourkela</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f2;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff0f5;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #d63384;
+        }
+
+        #search {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #d63384;
+            border-radius: 6px;
+            background-color: #ffe6f2;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            background-color: #fff;
+            margin-bottom: 12px;
+            padding: 18px;
+            border: 2px solid #d63384;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        li h3 {
+            color: #d63384;
+            margin-bottom: 6px;
+        }
+
+        li p {
+            color: #333;
+            font-size: 16px;
+        }
+
+        li strong {
+            color: #d63384;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Women's Safety Contact Numbers - Rourkela</h1>
+        <input type="text" id="search" onkeyup="filterContacts()" placeholder="Search for institution...">
+
+        <h2>Nearby Hospitals</h2>
+        <ul id="contactList">
+          <li>
+            <h3>Ispat General Hospital</h3>
+            <p>Phone: <strong>0661-2641717</strong></p>
+        </li>
+        <li>
+            <h3>JP Hospital</h3>
+            <p>Phone: <strong>0661-2471222</strong></p>
+        </li>
+            <li>
+                <h3>IGH Rourkela</h3>
+                <p>Phone: <strong>0661-264-0170</strong></p>
+            </li>
+            <li>
+                <h3>Hi-Tech Medical College & Hospital</h3>
+                <p>Phone: <strong>0661-246-0022</strong></p>
+            </li>
+            <li>
+                <h3>Community Health Centre, Sector 6</h3>
+                <p>Phone: <strong>0661-264-0131</strong></p>
+            </li>
+        </ul>
+
+        <h2>Police Stations in Rourkela</h2>
+        <ul>
+          <li>
+            <h3>Rourkela Police Station</h3>
+            <p>Phone: <strong>0661-2510489</strong></p>
+        </li>
+        <li>
+            <h3>Sector-15 Police Station</h3>
+            <p>Phone: <strong>0661-2510420</strong></p>
+        </li>
+        <li>
+            <h3>Uditnagar Police Station</h3>
+            <p>Phone: <strong>0661-2501298</strong></p>
+        </li>
+            <li>
+                <h3>Sector 19 Police Station</h3>
+                <p>Phone: <strong>0661-264-0175</strong></p>
+            </li>
+            <li>
+                <h3>Plant Site Police Station</h3>
+                <p>Phone: <strong>0661-264-0174</strong></p>
+            </li>
+            <li>
+                <h3>Bondamunda Police Station</h3>
+                <p>Phone: <strong>0661-266-0275</strong></p>
+            </li>
+        </ul>
+
+        <h2>Women Help Stations in Rourkela</h2>
+        <ul>
+            <li>
+                <h3>Mahila Thana, Rourkela</h3>
+                <p>Phone: <strong>0661-264-0178</strong></p>
+            </li>
+            <li>
+                <h3>Women Protection Cell</h3>
+                <p>Phone: <strong>0661-264-0180</strong></p>
+            </li>
+        </ul>
+    </div>
+    
+    <script>
+        function filterContacts() {
+            let input = document.getElementById('search');
+            let filter = input.value.toUpperCase();
+            let ul = document.querySelectorAll("ul");
+            ul.forEach((list) => {
+                let li = list.getElementsByTagName('li');
+                for (let i = 0; i < li.length; i++) {
+                    let h3 = li[i].getElementsByTagName('h3')[0];
+                    let txtValue = h3.textContent || h3.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

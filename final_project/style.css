@@ -23,7 +23,13 @@ img {
   color: #7e2451;
 }
 
-h1,
+  h1 {
+    padding-left: 7%;
+
+}
+
+
+
 h2,
 h3,
 h4,
@@ -118,8 +124,10 @@ nav{
   justify-content: center;
 }
 .text-content {
-  max-width: 60%;
+  max-width: 90%;
   padding-right: 20px;
+  font-size: 20px;
+
 }
 .image-content {
   flex-shrink: 0;
@@ -164,11 +172,6 @@ footer{
 .social-icon img {
   width: 24px;
   height: 24px;
-
-}
-
-.social-icon img:hover{
-  cursor: pointer;
 }
 
 
@@ -265,13 +268,15 @@ ul#menu li.selected a:hover {
 }
 
 #site_content {
+  max-width: 90%;
+  padding-right: 20px;
+  font-size: 20px;
+
   width: 854px;
   overflow: hidden;
   margin: 0 auto 0 auto;
   padding: 0 24px 20px 20px;
   background: #d1b8b8;
-  font-family: sans-serif;
-  white-space: pre-line;
 }
 
 .sidebar {
@@ -356,8 +361,8 @@ ul#menu li.selected a:hover {
 footer{
   background-color: #9a5c7c;
   margin-top: 20px;
-  padding-top: 30px;
-  height: 35vh;
+  padding-top: 20px;
+  height: 30vh;
 }
 
 
@@ -473,6 +478,43 @@ img {
   transition: 0.75s;
 }
 
+.download-container {
+  text-align: center;
+  margin-top: -300px;
+  margin-left: 250px;
+  font-weight: 800;
+
+}
+
+.download-button {
+  background-color: #9a5c7c;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 50px;
+  font-weight: 800;
+  
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #c071e8;
+  transform: scale(1.05);
+}
+
+.download-button a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
 /*.zoomimage:hover img{
   transform: scale(5);
-}*/ 
+}*/
