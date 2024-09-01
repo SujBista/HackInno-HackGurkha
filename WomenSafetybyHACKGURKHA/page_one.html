@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Women Safety</title>
+    <link rel="stylesheet" type="text/css" href="style.css" title="style">
+    <style>
+
+        #menubar {
+            width: 100%; /* or any specific width you prefer */
+            padding-left: 250px;
+            display: flex;
+            justify-items: center;
+            justify-content: space-between; /* Space items evenly */
+        }
+        
+        ul#menu {
+            transform: translatex(30%) !important;
+        }
+        #right-panel {
+            font-family: 'Roboto', 'sans-serif';
+        }
+        #right-panel select, #right-panel input {
+            font-size: 15px;
+        }
+        #right-panel select {
+            width: 100%;
+        }
+        #right-panel i {
+            font-size: 12px;
+        }
+        html, body {
+            overflow: hidden; /* Hide scrollbars and prevent scrolling */
+        }
+        
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100vh;
+            width: 80%;
+            float: left;
+        }
+        #right-panel {
+            float: right;
+            width: 15%;
+            padding: 10px;
+        }
+        #output {
+            font-size: 11px;
+        }
+    </style>
+    
+    <!-- Get the Leaflet.js CSS file -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-1F8gF2g1UdsDa2Z9pBIk8wURtOk3AqV4VEZxjVtG2Ek="
+          crossorigin="" />
+</head>
+<body>
+
+    <div id="menubar">
+        <ul id="menu">
+            <li><a href="index.html">Welcome Page</a></li>
+            <li><a href="page_one.html">Navigation</a></li>
+            <li><a href="page_three.html">Contact Details</a></li>  
+          
+        </ul>
+    </div>
+
+    <div id="right-panel">
+        <div id="inputs"></div>
+        <div><strong>Results</strong></div>
+        <div id="output"></div>
+    </div>
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118198.626072272!2d84.74175024117079!3d22.213236161104078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a20199b4c94c2a5%3A0xb4a4e62e77879624!2sRourkela%2C%20Odisha!5e0!3m2!1sen!2sin!4v1725096798963!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118170.58488351072!2d84.72648269726562!3d22.246498499999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a201e98c0bc4e33%3A0xf0f1c3443e8cc35d!2sSector%203%20Police%20Station%2C%20Rourkela!5e0!3m2!1sen!2sin!4v1725097203405!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118170.58488351072!2d84.72648269726562!3d22.246498499999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a20193ece7a9599%3A0x60d70a1e331d1080!2sUditnagar%20Police%20Station!5e0!3m2!1sen!2sin!4v1725097236454!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118170.58488351072!2d84.72648269726562!3d22.246498499999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a201ec9c08be0e9%3A0x307302a3dac263d6!2sGRP%20Police%20Station!5e0!3m2!1sen!2sin!4v1725097249639!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118170.58488351072!2d84.72648269726562!3d22.246498499999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a201e2294350d95%3A0xa05a2f09e1bcf0c3!2sBondamunda%20Police%20Station!5e0!3m2!1sen!2sin!4v1725097261029!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118170.58488351072!2d84.72648269726562!3d22.246498499999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a201ea363686989%3A0xa6be74608e8badc8!2sMahila%20Police%20Station!5e0!3m2!1sen!2sin!4v1725097223389!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  
+
+   
+</body>
+</html>
+
+
